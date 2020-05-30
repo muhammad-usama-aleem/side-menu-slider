@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  /*Locationoftheimage*/
+  background-image: url("back1.jpg");
+  /*Imageiscenteredverticallyandhorizontallyatalltimes*/
+  background-position: center center;
+  /*Imagedoesn'trepeat*/
+  background-repeat: no-repeat;
+  /*Makestheimagefixedintheviewportsothatitdoesn'tmovewhenthecontentheightisgreaterthantheimageheight*/
+  background-attachment: fixed;
+  /*Thisiswhatmakesthebackgroundimagerescalebasedonitscontainer'ssize*/
+  background-size: cover;
+  /*Pickasolidbackgroundcolorthatwillbedisplayedwhilethebackgroundimageisloading*/
+  transition: transform 0.7s;
+  -webkit-transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  -ms-transition: transform 0.7s;
+  -o-transition: transform 0.7s;
+}
+nav {
+  margin-top: 0;
+  padding-top: 0;
+  background-color: rgb(42, 42, 42);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  color: white;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+body.show-nav {
+  transform: translate(20vw);
+  -webkit-transform: translate(20vw);
+  -moz-transform: translate(20vw);
+  -ms-transform: translate(20vw);
+  -o-transform: translate(20vw);
+}
+nav .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding-right: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+nav ul li {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: larger;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(172, 169, 155);
+}
+nav ul li:first-of-type {
+  border-top: 1px solid rgb(172, 169, 155);
+}
+.main p {
+  padding-top: 0;
+  margin-top: 0;
+}
+.container {
+  position: relative;
+}
+.container .join {
+  position: absolute;
+  left: 45%;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid plum;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #121e2c;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: x-large;
+}
+.container button {
+  text-shadow: 0px 0px 3px rgb(247, 247, 247);
+}
+.container .nav {
+  position: relative;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 15px;
+  /* display: block; */
+}
+.text {
+  font-family: "Sacramento", cursive;
+  padding: 10px;
+  padding-top: 25vh;
+  font-size: 5rem;
+  color: white;
+  opacity: 0.7;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
